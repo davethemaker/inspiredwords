@@ -2,8 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const MongoClient = require("mongodb").MongoClient;
+
 require('dotenv').config()
 
+app.set('view engine','ejs');  // set ejs as view engine
 
 // use MongoLab for cloud-hosted db
 MongoClient.connect('mongodb://'+ process.env.DB_USER +':' + process.env.DB_PASS + '@ds161551.mlab.com:61551/inspiredwords', (err,database) => {
@@ -12,7 +14,7 @@ MongoClient.connect('mongodb://'+ process.env.DB_USER +':' + process.env.DB_PASS
 
     app.get('/',(req,res) => {
     // cursor is a Mongo Object
-         var cursor = db.collection('quotes').find().toArray(function(err,results){
+        var cursor = db.collection('quotes').find().toArray(function(err,results){
         console.log(results);
     });
    // res.sendFile(__dirname + '/index.html');
