@@ -8,6 +8,7 @@ require('dotenv').config()
 app.set('view engine','ejs');  // set ejs as view engine
 
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static('public')); // static resources here
 
 // use MongoLab for cloud-hosted db
 MongoClient.connect('mongodb://'+ process.env.DB_USER +':' + process.env.DB_PASS + '@ds161551.mlab.com:61551/inspiredwords', (err,database) => {
