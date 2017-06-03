@@ -10,6 +10,14 @@ MongoClient.connect('mongodb://'+ process.env.DB_USER +':' + process.env.DB_PASS
    if(err) return console.log(err)
     db = database;
 
+    app.get('/',(req,res) => {
+    // cursor is a Mongo Object
+         var cursor = db.collection('quotes').find().toArray(function(err,results){
+        console.log(results);
+    });
+   // res.sendFile(__dirname + '/index.html');
+});
+
     app.listen(8080,function(){
         console.log("server up at 8080");
     });
@@ -17,9 +25,7 @@ MongoClient.connect('mongodb://'+ process.env.DB_USER +':' + process.env.DB_PASS
 
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.get('/',(req,res) => {
-    res.sendFile(__dirname + '/index.html');
-});
+
 
 app.post('/quotes', (req,res) => {
     console.log(req.body);
