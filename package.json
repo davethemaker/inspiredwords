@@ -1,0 +1,31 @@
+{
+  "name": "inspiredwords",
+  "version": "1.0.0",
+  "description": "app to keep track of inspired words i've come across; express mongoDB CRUD functionality",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davethemaker/inspiredwords.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongoDB",
+    "CRUD"
+  ],
+  "author": "David Eliason",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davethemaker/inspiredwords/issues"
+  },
+  "homepage": "https://github.com/davethemaker/inspiredwords#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "nodemon": "^1.11.0"
+  }
+}
