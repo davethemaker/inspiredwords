@@ -4,6 +4,8 @@ Description:
   express framework with CRUD functionality to mongoLab db,
   EJS template engine, vanilla JS vs jQuery for eventListeners
 
+[live version]((https://inspiredwords.herokuapp.com/)  
+
 **Installation:**
 1. git clone repo
 2. [cli] $ npm install
