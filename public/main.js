@@ -21,6 +21,7 @@ replaceLastQuote.addEventListener('click',() => {
 });
 
 deleteQuote.addEventListener('click',() => {
+    console.log("delete button clicked");
     fetch('quotes',{
         method: 'delete',
         headers: {

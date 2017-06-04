@@ -58,6 +58,16 @@ MongoClient.connect('mongodb://'+ process.env.DB_USER +':' + process.env.DB_PASS
       )
     });
 
+    app.delete('/quotes',(req,res) =>{
+       db.collection('quotes').findOneAndDelete(
+
+        {author: req.body.author},
+        (err,result) => {
+            if(err) return res.send(500,err)
+            res.send({message: 'quote deleted'})
+        })
+    });
+
     app.listen(8080,function(){
         console.log("server up at 8080");
     });
