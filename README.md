@@ -1,5 +1,5 @@
 # [inspired words](https://inspiredwords.herokuapp.com/)
-## June 3, 2017
+## June 3-4, 2017
 Description:
   express framework with CRUD functionality to mongoLab db,
   EJS template engine, vanilla JS vs jQuery for eventListeners
