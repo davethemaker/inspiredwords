@@ -4,12 +4,23 @@
     <meta charset="utf-8">
     <title>inspired words</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One|Vibur" rel="stylesheet">
     <style>
         body {background-color: lightblue}
         .red {color: red}
         .quotes {
             padding: 50px;
         }
+        .emphasis {
+            font-family: 'Bubbler One', serif;
+        }
+        .italicQuotes {
+            font-family: 'Vibur', cursive;
+        }
+        .subForm {
+            padding-top: 40px;
+        }
+
     </style>
 </head>
 <body class="container">
@@ -18,7 +29,7 @@
         <% for(var i=0; i<quotes.length;i++) {%>
             <li class="quote">
                 <span class="red"><%= quotes[i].author %></span>
-                <span><%= quotes[i].quote %></span>
+                <span class="italicQuotes"><%= quotes[i].quote %></span>
             </li>
         <% } %>
     </ul>
@@ -29,15 +40,24 @@
         <button class="btn btn-xs btn-success" type="submit">Submit</button>
     </form>
 
-    <div>
-        <h3>replace the last quote</h3>
+        <h3>Make some changes..</h3>
 
-        <input type="text" placeholder="author's name" id="old_author" name="old_author">
-        <input type="text" placeholder="new author name" id="new_author" name="new_author">
-        <input type="text" placeholder="new quote" id="new_quote" name="new_quote">
+        <div class="emphasis">
+            <div class="row">
+                <div class="col-xs-6">
+                    <h5>Which author to update?</h5>
+                </div>
+                <div class="col-xs-6">
+                    <input type="text" placeholder="author's name" id="old_author" name="old_author">
+                </div>
+            </div>
+        </div>
 
-        <button class="btn btn-xs btn-warning" id="replaceLastQuote">Update that bad boy!</button>
-    </div>
+        <div class="subForm">
+            <input type="text" placeholder="new author name" id="new_author" name="new_author">
+            <input type="text" placeholder="new quote" id="new_quote" name="new_quote">
+            <button class="btn btn-xs btn-warning" id="replaceLastQuote">Update that bad boy!</button>
+        </div>
   <script src="main.js"></script>
 </body>
 </html>
