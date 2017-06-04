@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <style>
         body {background-color: lightblue}
+        .red {color: red}
     </style>
 </head>
 <body class="container">
@@ -13,7 +14,7 @@
     <ul class="quotes">
         <% for(var i=0; i<quotes.length;i++) {%>
             <li class="quote">
-                <span><%= quotes[i].author %></span>
+                <span class="red"><%= quotes[i].author %></span>
                 <span><%= quotes[i].quote %></span>
             </li>
         <% } %>
