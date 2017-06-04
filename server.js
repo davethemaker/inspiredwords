@@ -40,10 +40,10 @@ MongoClient.connect('mongodb://'+ process.env.DB_USER +':' + process.env.DB_PASS
 
     app.put('/quotes',(req,res) =>{
         db.collection('quotes').findOneAndUpdate(
-        {},
+        { author: req.body.author },
         {
             $set: {
-                author: req.body.author,
+                author: req.body.new_author,
                 quote: req.body.quote
             }
         },

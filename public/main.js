@@ -7,7 +7,8 @@ replaceLastQuote.addEventListener('click',() => {
         method: 'put',
         headers: {'Content-Type':'application/json'},
         body: JSON.stringify({
-            'author': document.getElementById("new_author").value,
+            'new_author': document.getElementById("new_author").value,
+            'author': document.getElementById("old_author").value,
             'quote': document.getElementById("new_quote").value
         })
     }).then(res => {
