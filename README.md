@@ -8,4 +8,4 @@ Installation:
 3. [cli] $ node server.js (or, $ npm run start)
 4. [browser] localhost://8080
 
-[!inspired_words](./inspired_words.png?raw=true "inspired words")
+![inspired_words](./inspired_words.png?raw=true "inspired words")
