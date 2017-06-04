@@ -39,7 +39,25 @@ MongoClient.connect('mongodb://'+ process.env.DB_USER +':' + process.env.DB_PASS
      });
 
     app.put('/quotes',(req,res) =>{
-
+        db.collection('quotes').findOneAndUpdate(
+        {
+            author: 'tim'
+        },
+        {
+            $set: {
+                author: req.body.author,
+                quote: req.body.quote
+            }
+        },
+        {
+            sort: {_id: -1},
+            upsert:true
+        },
+        (err,result) => {
+            if(err) return res.send(err)
+            res.send(result)
+        }
+      )
     });
 
     app.listen(8080,function(){

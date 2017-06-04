@@ -9,6 +9,11 @@ replaceLastQuote.addEventListener('click',() => {
         body: JSON.stringify({
             'author':'Amanda Palmer',
             'quote':'Take the pain and wear it like a shirt'
-        });
-    });
+        })
+    }).then(res => {
+        if (res.ok) return res.json()
+   }).then(data => {
+       console.log(data)
+       window.location.reload(true)
+   })
 });
