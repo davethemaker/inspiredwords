@@ -2,7 +2,8 @@
   "name": "inspiredwords",
   "version": "1.0.0",
   "engines": {
-    "node":"7.2.0"
+    "node":"7.2.0",
+    "npm":"3.10.9"
   },
   "description": "app to keep track of inspired words i've come across; express mongoDB CRUD functionality",
   "main": "server.js",
