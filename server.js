@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json()); // get server to read JSON data
 
 // use MongoLab for cloud-hosted db
-MongoClient.connect('mongodb://'+ process.env.PROD_MONGODB, (err,database) => {
+MongoClient.connect( process.env.PROD_MONGODB, (err,database) => {
    if(err) return console.log(err)
     db = database;
 
