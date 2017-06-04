@@ -7,7 +7,7 @@ replaceLastQuote.addEventListener('click',() => {
         method: 'put',
         headers: {'Content-Type':'application/json'},
         body: JSON.stringify({
-            'author':'Amanda Palmer',
+            'author':'new Palmer',
             'quote':'Take the pain and wear it like a shirt'
         })
     }).then(res => {
