@@ -6,6 +6,7 @@ const MongoClient = require("mongodb").MongoClient;
 require('dotenv').config()
 
 app.set('view engine','ejs');  // set ejs as view engine
+app.set('port', (process.env.PORT || 8080));
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public')); // static resources here
@@ -68,9 +69,10 @@ MongoClient.connect('mongodb://'+ process.env.DB_USER +':' + process.env.DB_PASS
         })
     });
 
-    app.listen(8080,function(){
-        console.log("server up at 8080");
+    app.listen(app.get('port'), function() {
+        console.log('Node app is running on port', app.get('port'));
     });
+
 });
 
 
