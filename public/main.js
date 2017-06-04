@@ -7,8 +7,8 @@ replaceLastQuote.addEventListener('click',() => {
         method: 'put',
         headers: {'Content-Type':'application/json'},
         body: JSON.stringify({
-            'author':'new Palmer',
-            'quote':'Take the pain and wear it like a shirt'
+            'author': document.getElementById("new_author").value,
+            'quote': document.getElementById("new_quote").value
         })
     }).then(res => {
         if (res.ok) return res.json()
