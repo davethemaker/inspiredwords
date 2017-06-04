@@ -5,11 +5,13 @@ const MongoClient = require("mongodb").MongoClient;
 
 require('dotenv').config()
 
-app.set('view engine','ejs');  // set ejs as view engine
 app.set('port', (process.env.PORT || 8080));
+app.use(express.static(__dirname + '/public')); // static resources here
+
+app.set('views',__dirname + '/views');
+app.set('view engine','ejs');  // set ejs as view engine
 
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static('public')); // static resources here
 app.use(bodyParser.json()); // get server to read JSON data
 
 // use MongoLab for cloud-hosted db
