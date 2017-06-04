@@ -20,6 +20,9 @@
         .subForm {
             padding-top: 40px;
         }
+        .deleteArea {
+            padding-top: 40px;
+        }
 
     </style>
 </head>
@@ -58,6 +61,21 @@
             <input type="text" placeholder="new quote" id="new_quote" name="new_quote">
             <button class="btn btn-xs btn-warning" id="replaceLastQuote">Update that bad boy!</button>
         </div>
+
+    <div class="deleteArea emphasis">
+        <div class="row">
+            <div class="col-xs-4">
+                <h5>Which author to delete?</h5>
+            </div>
+            <div class="col-xs-4">
+                <input type="text" placeholder="author to delete" id="delete_author" name="delete_author">
+            </div>
+            <div class="col-xs-4">
+                <button class="btn btn-xs btn-danger" id="deleteQuote">Delete quote</button>
+            </div>
+        </div>
+    </div>
+
   <script src="main.js"></script>
 </body>
 </html>
