@@ -1,6 +1,8 @@
 # inspired words
 ## June 3, 2017
-### express framework with CRUD functionality to mongoLab db, EJS template engine, vanilla JS vs jQuery for eventListeners
+Description:
+  express framework with CRUD functionality to mongoLab db,
+  EJS template engine, vanilla JS vs jQuery for eventListeners
 
 Installation:
 1. git clone repo
