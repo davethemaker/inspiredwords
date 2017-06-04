@@ -2,10 +2,11 @@
   "name": "inspiredwords",
   "version": "1.0.0",
   "description": "app to keep track of inspired words i've come across; express mongoDB CRUD functionality",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
