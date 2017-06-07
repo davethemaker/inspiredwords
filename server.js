@@ -21,7 +21,7 @@ MongoClient.connect( process.env.PROD_MONGODB, (err,database) => {
 
     app.get('/',(req,res) => {
     // cursor is a Mongo Object
-        db.collection('quotes').find().toArray(function(err,result){
+        db.quotes.find().toArray(function(err,result){
           if(err) return console.log(err)
           // console.log(results);
           res.render('index.ejs', {quotes: result});
