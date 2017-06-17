@@ -1,8 +1,11 @@
 # [inspired words](https://inspiredwords.herokuapp.com/)
 ## June 3-4, 2017
+###[David Eliason](http://www.deliason.com)
 Description:
-  express framework with CRUD functionality to mongoLab db,
-  EJS template engine, vanilla JS vs jQuery for eventListeners
+  Exploring a number of different technologies working together.
+
+Under the hood:
+  Express framework with CRUD functionality, using mongoDB for data persistence, EJS templating, and vanilla JS for eventListeners.
 
 [live version](https://inspiredwords.herokuapp.com/)  
 
@@ -14,7 +17,7 @@ $ git clone https://github.com/davideliason/inspiredwords
 ````
 Next, change into that directory and install dependencies:
 ````
-[cli] $ npm install
+$ npm install
 ````
 Then, spin up the server:
 ````
