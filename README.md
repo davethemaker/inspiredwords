@@ -7,10 +7,23 @@ Description:
 [live version](https://inspiredwords.herokuapp.com/)  
 
 **Installation:**
-1. git clone repo
-2. [cli] $ npm install
-3. [cli] $ node server.js (or, $ npm run start)
-4. [browser] localhost://8080
+
+First, clone the repo
+````
+$ git clone https://github.com/davideliason/inspiredwords
+````
+Next, change into that directory and install dependencies:
+````
+[cli] $ npm install
+````
+Then, spin up the server:
+````
+$ npm run start
+````
+Finally, open your browser:
+````
+http://wwww.localhost://8080
+````
 
 
 ![inspired_words](./inspired_words.png?raw=true "inspired words")
