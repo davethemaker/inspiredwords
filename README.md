@@ -1,13 +1,14 @@
 # [inspired words](https://inspiredwords.herokuapp.com/)
 ## June 3-4, 2017
-###[David Eliason](http://www.deliason.com)
-Description:
-  Exploring a number of different technologies working together.
+### [David Eliason](http://www.deliason.com)
 
-Under the hood:
-  Express framework with CRUD functionality, using mongoDB for data persistence, EJS templating, and vanilla JS for eventListeners.
+**Description:**
+Exploring a number of different technologies working together.
 
-[live version](https://inspiredwords.herokuapp.com/)  
+**Under the hood:**
+Express framework with CRUD functionality, using mongoDB for data persistence, EJS templating, and vanilla JS for eventListeners.
+
+**[Live version](https://inspiredwords.herokuapp.com/)**
 
 **Installation:**
 
