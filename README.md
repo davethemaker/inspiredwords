@@ -1,6 +1,6 @@
 # [inspired words](https://inspiredwords.herokuapp.com/)
 ## June 3-4, 2017
-### [David Eliason](http://www.deliason.com)
+### [David Eliason](http://www.davethemaker.com)
 
 **Description:**
 Exploring a number of different technologies working together.
