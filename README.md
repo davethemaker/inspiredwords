@@ -12,6 +12,16 @@ Express framework with CRUD functionality, using mongoDB for data persistence, E
 
 [Return to Portfolio](https://davideliason.github.io/)
 
+### Summary
+This was an exercise for building a full-stack app, with the emphasis on the backend's Express server and MongoDB.
+
+### Process/Lessons Learned
+The application was successfully deployed to Heroku back in June 2017, but fast-forward to December 2017 and the code no longer works; I remember seeing an email from a provider that the node version had been changed for some reason, but at the time I was focused on another project so put it off. Well, now that I'd like to fix it, the challenge is knowing where to start; the 'Internal Server Error' is the only log that the Heroku console gives. I uninstalled all the npm modules and re-installed using current ones.
+
+### Conclusion
+
+
+
 **Installation:**
 
 First, clone the repo
