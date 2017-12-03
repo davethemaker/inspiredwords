@@ -17,8 +17,6 @@ The application was successfully deployed to Heroku back in June 2017, but fast-
 
 ### Conclusion
 
-
-
 **Installation:**
 
 First, clone the repo
